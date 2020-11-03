@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /* 
     1. 一维数组的声明和初始化
     2. 如何访问数组指定位置的元素
@@ -32,5 +34,20 @@ public class array {
         for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
         }
+
+        // 二维数组初始化
+        String[][] arr1 = new String[3][2];
+        String[][] arr2 = new String[3][];
+        int[][] arr3 = new int[][] { { 1, 2, 3 }, { 4, 5 }, { 6, 7, 8 } };
+        System.out.println(arr1);
+        System.out.println(arr2);
+        System.out.println(arr3);
+
+        // 类型推断
+        int arr5[] = { 1, 2, 3, 4, 5 };
+        /*
+         * 下面这种写法有问题 int arr6[] = new int[3]; arr6={1,2,3};
+         */
+        System.out.println("array5: " +  Arrays.toString(arr5));
     }
 }
