@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HelloJava01",
+            "request": "launch",
+            "mainClass": "HelloJava01",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GetFibonacciNum",
+            "request": "launch",
+            "mainClass": "GetFibonacciNum",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Array",
+            "request": "launch",
+            "mainClass": "Array",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloJava",
+            "request": "launch",
+            "mainClass": "HelloJava",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
             "name": "Java Debug",
             "request": "launch",
             "mainClass": "${file}",

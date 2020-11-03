@@ -5,7 +5,8 @@ public class GetFibonacciNum {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input a integer:");
         int N = scanner.nextInt();
-
+        scanner.close();
+        
         switch (N) {
             case 0:
                 System.out.println(0);

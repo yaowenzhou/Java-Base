@@ -14,7 +14,7 @@ import java.util.Arrays;
         >boolean:   false
         >引用:      null
 */
-public class array {
+public class Array {
     public static void main(String[] args) {
         // 一维数组的声明和初始化
         int[] ids; // 声明
