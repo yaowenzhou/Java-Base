@@ -1,5 +1,3 @@
-import java.security.Principal;
-
 public class Operator {
     public static void main(String[] args) {
         int num1 = 12;

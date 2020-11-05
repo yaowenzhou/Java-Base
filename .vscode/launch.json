@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Operator",
+            "request": "launch",
+            "mainClass": "Operator",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloJava",
+            "request": "launch",
+            "mainClass": "HelloJava.HelloJava",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HelloJava01",
             "request": "launch",
             "mainClass": "HelloJava01",
