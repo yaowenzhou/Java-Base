@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - variableNumberArgsTest",
+            "request": "launch",
+            "mainClass": "variableNumberArgsTest",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InstanceTest",
+            "request": "launch",
+            "mainClass": "InstanceTest",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PersonTest",
             "request": "launch",
             "mainClass": "PersonTest",
