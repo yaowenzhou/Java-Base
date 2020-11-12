@@ -1,3 +1,5 @@
+package PrintPrimeNumber;
+
 /* 
     Output all prime numbers within N
 */
