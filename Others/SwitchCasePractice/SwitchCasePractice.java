@@ -1,5 +1,3 @@
-package SwitchCasePractice;
-
 /* 
 编写程序: 从键盘上输入2019年的"month"和"day"，要求通过程序输出该日期为2019年的第几天
 */

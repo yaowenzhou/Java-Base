@@ -1,5 +1,3 @@
-package GetFibonacciNum;
-
 import java.util.Scanner;
 
 public class GetFibonacciNum {
