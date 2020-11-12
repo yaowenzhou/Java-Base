@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DataType",
+            "request": "launch",
+            "mainClass": "DataType",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GetFibonacciNum",
+            "request": "launch",
+            "mainClass": "GetFibonacciNum.GetFibonacciNum",
+            "projectName": "Java-Base_bb6d2ed4"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - variableNumberArgsTest",
             "request": "launch",
             "mainClass": "variableNumberArgsTest",
