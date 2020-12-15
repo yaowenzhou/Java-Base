@@ -1,3 +1,11 @@
+/**
+ * @Author       : yaowenzhou
+ * @Date         : 2020-12-04 21:38:04
+ * @LastEditors  : yaowenzhou
+ * @LastEditTime : 2020-12-15 22:56:41
+ * @version      : 
+ * @Description  : 
+ */
 package SuperTest;
 
 /* super 关键字的使用
@@ -30,6 +38,5 @@ public class SuperTest {
         Student s = new Student();
         s.show();
         s.study();
-        
     }
 }
