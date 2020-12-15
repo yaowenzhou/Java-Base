@@ -4,7 +4,7 @@
  * @Author       : yaowenzhou
  * @Date         : 2020-12-15 21:13:46 Tuesday
  * @LastEditors  : yaowenzhou
- * @LastEditTime : 2020-12-15 22:39:34
+ * @LastEditTime : 2020-12-15 23:07:04
  * @Version      : 0.0.1
  * @Description  : 包装类的使用
  */
@@ -68,5 +68,25 @@ public class WrapperTest {
         float f1 = 12.3f;
         String str3 = String.valueOf(f1);
         System.out.println(str3);
+    }
+
+    @Test
+    public void test4() {
+        Integer in1 = new Integer(1);
+        Integer in2 = new Integer(1);
+        System.out.println(in1 == in2); // false
+
+        // 真正的原因是IntegerCache中有个缓存的数组 static final Integer cache[]
+        // 这个数组存储着 [-128, 127]之间的数(这个范围的数使用频率最高)
+        // 自动装箱时，直接返回相应的Integer对象，如果缓存中找不到，才会new一个Integer对象并返回
+        // 因此in3 和 in4实际上指向同一个Integer对象
+        Integer in3 = 1;
+        Integer in4 = 1;
+        System.out.println(in3 == in4); // true
+
+        Integer in5 = 128;
+        Integer in6 = 128;
+        System.out.println(in5 == in6); // false
+
     }
 }
