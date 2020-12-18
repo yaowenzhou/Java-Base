@@ -1,3 +1,11 @@
+/**
+ * @Author       : yaowenzhou
+ * @Date         : 2020-12-18 20:54:25
+ * @LastEditors  : yaowenzhou
+ * @LastEditTime : 2020-12-18 22:10:33
+ * @version      : 
+ * @Description  : 
+ */
 public class Thread2 implements Runnable {
     private int ticket = 100;
 

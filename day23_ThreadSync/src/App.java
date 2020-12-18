@@ -1,11 +1,20 @@
+
+/**
+ * @Author       : yaowenzhou
+ * @Date         : 2020-12-18 20:54:25
+ * @LastEditors  : yaowenzhou
+ * @LastEditTime : 2020-12-19 00:55:43
+ * @version      : 
+ * @Description  : 
+ */
 import org.junit.AfterClass;
 import org.junit.Test;
 
 /* 线程同步方式一: 同步代码块
- * synchronized(同步监视器) {
- *     // 需要被同步的代码
- * }
- * 同步监视器俗称锁，任何一个对象都可以充当锁，但是具备竞争条件的多个线程必须使用同一把锁
+ *  synchronized(同步监视器) {
+ *      // 需要被同步的代码
+ *  }
+ *  同步监视器俗称锁，任何一个对象都可以充当锁，但是具备竞争条件的多个线程必须使用同一把锁
  * 
  * 线程同步方式二: 同步方法
  *      如果操作共享数据的代码完整地声明在一个方法中
@@ -14,9 +23,13 @@ import org.junit.Test;
  *  2. 继承Thread类的方式中使用同步方法，与1.中类似
  *      但是需要将该同步方法定义为static类型
  *      此时的同步监视器是 ClassName.class
+ * 
+ * 线程同步方式三: 通过ReentrantLock实现线程的同步
+ * 
  */
 public class App {
     public static void main(String[] args) throws Exception {
+        // 同步代码块实现线程同步
         Thread1 _t1 = new Thread1();
         Thread t1 = new Thread(_t1);
         Thread t2 = new Thread(_t1);
@@ -26,6 +39,7 @@ public class App {
         t3.start();
     }
 
+    // Runnable实现线程 + 同步方法实现线程同步
     @Test
     public void Thread2Test() {
         Thread2 _t2 = new Thread2();
@@ -47,6 +61,7 @@ public class App {
         System.out.println("票已经卖完了...");
     }
 
+    // 通过ReentrantLock实现线程的同步
     @Test
     public void Thread3Test() {
         Thread3 _t3 = new Thread3();
@@ -65,6 +80,7 @@ public class App {
         System.out.println("票已经卖完了...");
     }
 
+    // 线程通信的一个例子
     @Test
     public void ThreadCommunicationTest() {
         ThreadCommunication _t = new ThreadCommunication();

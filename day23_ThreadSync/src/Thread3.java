@@ -1,3 +1,11 @@
+/**
+ * @Author       : yaowenzhou
+ * @Date         : 2020-12-18 20:54:25
+ * @LastEditors  : yaowenzhou
+ * @LastEditTime : 2020-12-18 22:09:48
+ * @version      : 
+ * @Description  : 
+ */
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Thread3 implements Runnable {
@@ -8,7 +16,6 @@ public class Thread3 implements Runnable {
      *      如果不传递，则fair的值为false
      *      true: 创建的是一个公平的锁，以一个队列的形式维护线程对于锁的竞争
      *      false: 随缘竞争
-     * 
      */
     private ReentrantLock lock = new ReentrantLock(true);
 
