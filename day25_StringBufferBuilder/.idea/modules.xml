@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/StringBuffer/StringBuffer.iml" filepath="$PROJECT_DIR$/StringBuffer/StringBuffer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringBuilder/StringBuilder.iml" filepath="$PROJECT_DIR$/StringBuilder/StringBuilder.iml" />
       <module fileurl="file://$PROJECT_DIR$/day25_StringBufferBuilder.iml" filepath="$PROJECT_DIR$/day25_StringBufferBuilder.iml" />
     </modules>
   </component>
