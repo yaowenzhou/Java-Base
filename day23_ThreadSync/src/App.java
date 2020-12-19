@@ -3,7 +3,7 @@
  * @Author       : yaowenzhou
  * @Date         : 2020-12-18 20:54:25
  * @LastEditors  : yaowenzhou
- * @LastEditTime : 2020-12-19 00:55:43
+ * @LastEditTime : 2020-12-19 09:53:04
  * @version      : 
  * @Description  : 
  */
@@ -25,7 +25,6 @@ import org.junit.Test;
  *      此时的同步监视器是 ClassName.class
  * 
  * 线程同步方式三: 通过ReentrantLock实现线程的同步
- * 
  */
 public class App {
     public static void main(String[] args) throws Exception {

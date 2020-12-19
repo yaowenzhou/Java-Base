@@ -1,3 +1,4 @@
+
 /* 创建多线程方式2: 实现Runnable接口
  * 1. 创建一个实现了Runnable接口的类Thread2
  * 2. Thread2 去实现Runnable中的抽象方法run()

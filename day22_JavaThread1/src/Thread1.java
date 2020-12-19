@@ -1,4 +1,13 @@
 /**
+ * @Author       : yaowenzhou
+ * @Date         : 2020-12-18 20:54:25
+ * @LastEditors  : yaowenzhou
+ * @LastEditTime : 2020-12-19 14:26:17
+ * @version      : 
+ * @Description  : 
+ */
+
+/**
  * Java多线程方式1: 继承Thread类
  * 1. 定义一个继承于Thread类的子类SubThread
  * 2. 重写Thread类的run() --> 讲此线程执行的操作声明在此方法中

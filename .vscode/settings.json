@@ -5,5 +5,10 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "editor.fontFamily": "'Courier New', monospace"
+    "editor.fontFamily": "'Courier New', monospace",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "third-party-libraries/hamcrest-core-1.3.jar",
+        "third-party-libraries/junit-4.13.1.jar"
+    ]
 }
