@@ -1,5 +1,5 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.junit.Test;
@@ -183,20 +183,29 @@ class Son8<T2, A, B> extends Father<Integer, T2> {
  * List<String> list1 = null;
  * List<Object> list2 = null;
  * list1 = list2;
+ */
+/*
  * This situation makes the use of generics have certain limitations
  * you can consider wildcards at this time
  * 这种情况使得泛型的使用具备了一定的局限性，此时可以考虑通配符
- * public void print(List<?> list) {
- *     Iterator<?> ite = list.iterator();
- *     while(ite.hasNext()) {
- *         System.out.println(ite.next());
- *     }
- * }
- * we cannot add data to a container which is defined with wildcards, except for null
+ */
+class WildcardGeneric {
+    public void print(List<?> list) {
+        Iterator<?> ite = list.iterator();
+        while (ite.hasNext()) {
+            System.out.println(ite.next());
+        }
+    }
+}
+/* we cannot add data to a container which is defined with wildcards, except for null
  * 使用通配符定义的容器就不能向其中添加数据了，除了null
  * Allow to read data, the type of the read data is Object
  * 允许读取数据，读取的数据类型为Object
  * 
  * Use of wildcards with restrictions
  * 有限制条件的通配符的使用
+ * ? extends A:
+ *      G<? extends A> 可以作为G<A>和G<B>的父类，其中B继承自A
+ * ? super A:
+ *      G<? super A> 可以作为G<A>和G<B>的父类，其中A继承自B
  */
