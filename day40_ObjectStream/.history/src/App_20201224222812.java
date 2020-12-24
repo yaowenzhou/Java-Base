@@ -69,8 +69,6 @@ public class App{
     // 并且当前类需要提供一个全局常量: serialVersionUID
     // In addition, all attributes inside the class also need to be serializable
     // 另外，类内部的所有属性也需要都是可序列化的
-    // static and transient member variables can not be modified serialized
-    // static 和 transient修饰的成员变量不能序列化
     @Test
     public void ObjectOutputStreamTest1() {
         ObjectOutputStream oos = null;

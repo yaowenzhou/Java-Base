@@ -66,11 +66,7 @@ public class App{
     // you must implement the interface Serializable or Externalizable
     // 要想某个类的对象可序列化，必须实现Serializable或者Externalizable接口
     // And the current class needs to provide a global constant: serialVersionUID
-    // 并且当前类需要提供一个全局常量: serialVersionUID
-    // In addition, all attributes inside the class also need to be serializable
-    // 另外，类内部的所有属性也需要都是可序列化的
-    // static and transient member variables can not be modified serialized
-    // static 和 transient修饰的成员变量不能序列化
+    // 并且当前累需要提供一个全局常量: serialVersionUID
     @Test
     public void ObjectOutputStreamTest1() {
         ObjectOutputStream oos = null;

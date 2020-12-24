@@ -130,9 +130,9 @@ public class App {
                     bos = null;
                 }
                 /*
-                 关闭外层流时，会自动关闭内层流
-                 fis.close();
-                 fos.close();
+                 * 关闭外层流时，会自动关闭内层流
+                 * fis.close();
+                 * fos.close();
                 */
             } catch (Exception e) {
             }
