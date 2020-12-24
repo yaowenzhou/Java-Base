@@ -1,11 +1,4 @@
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 
 import org.junit.Test;
@@ -136,10 +129,62 @@ public class App {
                     bos.close();
                     bos = null;
                 }
-                // 关闭外层流时，会自动关闭内层流
-                // fis.close();
-                // fos.close();
+                /*
+                 关闭外层流时，会自动关闭内层流
+                 fis.close();
+                 fos.close();
+                */
             } catch (Exception e) {
+            }
+        }
+    }
+
+    @Test
+    public void TransformStreamTest() throws IOException {
+        // 1. 造文件，造流
+        File file1 = new File("dbcp.txt");
+        File file2 = new File("dbcp_gbk.txt");
+        FileInputStream fis = new FileInputStream(file1);
+        FileOutputStream fos = new FileOutputStream(file2);
+        InputStreamReader isr = new InputStreamReader(fis, "utf-8");
+        OutputStreamWriter osw = new OutputStreamWriter(fos, "gbk");
+        char[] cbuf = new char[20];
+        int len;
+        // 2. 读写过程
+        while ((len = isr.read(cbuf)) != -1) {
+            osw.write(cbuf, 0, len);
+        }
+        // 3. 关闭资源
+        isr.close();
+        osw.close();
+    }
+
+    // 从键盘读取字符串，要求将读取到的郑航字符串转换成大写输出，然后继续操作
+    // 直至输入"e"或者"exit"时，退出程序
+    @Test
+    public void StandOutputInputPractice() {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(isr);
+        try {
+            while (true) {
+                System.out.println("请输入字符串:");
+                String data = br.readLine();
+                if("e".equalsIgnoreCase(data) || "exte".equalsIgnoreCase(data)) {
+                    System.out.println("程序结束.");
+                    break;
+                }
+                String upperCase = data.toUpperCase();
+                System.out.println(upperCase);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if(br != null) {
+                    br.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
