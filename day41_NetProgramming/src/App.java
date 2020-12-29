@@ -4,6 +4,7 @@ import java.net.UnknownHostException;
 import org.junit.Test;
 
 public class App {
+    String appName = "App";
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
     }
